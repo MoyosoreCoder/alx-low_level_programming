@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - Entry point of data
+*main- Entry point for data
 *Return: always 0 on success
 */
 int main(void)
