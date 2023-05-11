@@ -2,7 +2,8 @@
 #include <unistd.h>
 
 /**
- *
+ * _puts_recursion - function that print strings using recursion
+ * @s: string to be printed
  */
 void _puts_recursion(char *s)
 {
