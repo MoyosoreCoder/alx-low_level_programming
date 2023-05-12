@@ -16,6 +16,6 @@ int factorial(int n)
 	}
 	else
 	{
-		return (n * fsctorial(n - 1));
+		return (n * factorial(n - 1));
 	}
 }
