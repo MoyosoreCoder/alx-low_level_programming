@@ -1,20 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *
  *
  */
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
-	int i;
+	int len = 0;
 
-	for (i = 0; i < n; i++)
+	while (str[len] != '\0')
 	{
-		printf("%d", a[i])
-			if (i < n - 1)
-			{
-				printf(", ");
-			}
+		len++;
 	}
-	printf("\n")
+	int start_index = len / 2;
+
+	if (len % 2 != 0)
+	{
+		start_index = (len - 1) / 2;
+	}
+
+	for (i = start_index; i < len; i++)
+	{
+		printf("%c", str[i]);
+	}
+	printf('\n');
 }
 
