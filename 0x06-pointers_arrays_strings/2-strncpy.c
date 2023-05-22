@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *_strncpy -  function that copies a string
+ *_strncpy - function that copies a string
  *@dest: the destination string
  *@src: the source string
  *@n: the number of byte
- *Return: the (dest)
+ *Return: pointer to the destination buffer
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -13,12 +13,11 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		 dest[i] = src[i];
+		dest[i] = src[i];
 	}
-	while (i < n)
+	for (; i < n; i++)
 	{
-		dest = '\0';
-		i++;
+		dest[i] = '\0';
 	}
 	return (dest);
 }
