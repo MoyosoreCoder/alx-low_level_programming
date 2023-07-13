@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdef.h>
 /**
  *_strchr - afunction that clocate a character in a string
  *@s: the original string
@@ -9,13 +8,12 @@
  */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int i = 0;
+
+	for (; s[i] >= '\0'; i++)
 	{
-		if (*s == c)
-			return (s);
-		s++;
+		if (s[i] == c)
+			return (s[i]);
 	}
-	if (*s == c)
-		return (s);
-	return (NULL);
+	return (0);
 }
