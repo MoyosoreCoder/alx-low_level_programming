@@ -10,9 +10,10 @@
 int _strlen(char *s)
 {
 	int i;
+
 	i = 0;
 
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
@@ -21,15 +22,15 @@ int _strlen(char *s)
 
 /**
  *_strcpy - a function that copies src string to dest string
- *@dest: the first string given that has a range in buffer 
- *already set to a specific byte
- @src: the string to be copied to dest
+ *@dest: the first string given that has a range in buffer already set byte
+ *@src: the string to be copied to dest
  *
  *Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
 	int len, i;
+
 	len = 0;
 
 	while (src[len] != '\0')
@@ -46,8 +47,11 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
- *
- *
+ *new_dog - creates new dog identifier
+ *@name: name of the dog
+ *@age:age of the dog
+ *@owner: the owner of the dog
+ *Return: the dog struct
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -79,5 +83,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	_strcpy(dog->owner, owner);
 	dog->age = age;
 
-	return(dog);
-}	
+	return (dog);
+}
