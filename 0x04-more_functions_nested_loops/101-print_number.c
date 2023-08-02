@@ -6,16 +6,13 @@
 */
 void print_number(int n)
 {
-	unsigned int k = 0;
+	unsigned long int i, n = 612852475143;
 
-	if (n < 0)
+	for (i = 3; i < 782849; i = i + 2)
 	{
-		n *=  -1
-		k = n;
-		_putchar('-');
+		while ((n % i == 0) && (n ! = i))
+			n = n/i;
 	}
-	k / = 10;
-	if (k != 0)
-		print_numbers(k);
-		_putchar((unsigned int) n % 10 + '0');
+	printf("lu\n", n);
+	return (0);
 }
