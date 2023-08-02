@@ -7,13 +7,20 @@
 */
 void print_number(int n)
 {
-	unsigned long int i, n = 612852475143;
+	unsigned int nl;
 
-	for (i = 3; i < 782849; i = i + 2)
+	if (n < 0)
 	{
-		while ((n % i == 0) && (n != i))
-			n = n / i;
+		nl = -n;
+		_putchar('-');
 	}
-	printf("lu\n", n);
-	return (0);
+	else
+	{
+		nl = n;
+	}
+	if (nl / 10)
+	{
+		print_number(nl / 10);
+	}
+	_putchar((nl % 10) + '0');
 }
