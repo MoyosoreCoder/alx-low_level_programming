@@ -6,7 +6,7 @@
  *@argv: argument vector
  *Return: always 0 on success
  */
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int bytes, i;
 	char *arr;
