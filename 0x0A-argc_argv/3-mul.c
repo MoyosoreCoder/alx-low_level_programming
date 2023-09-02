@@ -1,27 +1,28 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - Entry point of data
+ * main - Entry point
  * @argc: argument count
- * @argv: argumnet vector
+ * @argv: argument vector
  *
- * Return: always 0 on success
+ * Return: 0 if program runs well and 1 if otherwise
  */
 int main(int argc, char *argv[])
 {
-	int n1 = 0, n2 = 0;
+	int num1, num2, result;
 
-	if (argc == 3)
+	if (argc != 3)
 	{
-		n1 = atoi(argv[1]);
-		n2 = atoi(argv[2]);
-		printf("%d\n", n1 * n2);
+		printf("Error\n");
+		return (1);
 	}
 	else
 	{
-		printf("Error\n");
-		return(1);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		result = num1 * num2;
+		printf("%d\n", result);
 	}
 	return (0);
 }
