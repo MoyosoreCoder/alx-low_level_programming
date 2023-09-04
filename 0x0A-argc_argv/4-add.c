@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
 		for (j = 0; arg[j] != '\0'; j++)
 		{
-			if(!isdigit(arg[j]))
+			if (!isdigit(arg[j]))
 			{
 				printf("Error\n");
 				return (1);
