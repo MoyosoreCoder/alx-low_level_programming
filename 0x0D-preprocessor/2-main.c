@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - Entry point of data
+ * Return: 0 on success
+ */
 
 int main(void)
 {
