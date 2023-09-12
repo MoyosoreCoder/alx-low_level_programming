@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *
  * free_dog - frees the memory allocated to the parameter
  * @d: the pointer to typedef dog_t
  */
