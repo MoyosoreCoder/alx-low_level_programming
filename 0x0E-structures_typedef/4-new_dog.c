@@ -5,7 +5,7 @@ char *_strcpy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 /**
  * _strlen - function that prints length of the string
- * @str: the given string
+ * @s: the given string
  *
  * Return: length of string
  */
@@ -30,6 +30,7 @@ int _strlen(char *s)
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
+
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
