@@ -1,38 +1,34 @@
 #include "dog.h"
-#include <stdio.h>
-#include <stddef.h>
-#include <string.h>
-#include <stdlib.h>
 /**
- * new_dog - pointer that points to the type dog_t
- * @name:the name of the dog
- * @age: age
- * @owner: owner
- * Return: the new allocated memory if memory failed return NULL
+ *
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	dog_t *dog_ptr;
 
-	dog_t *new_dog = (dog_t *)malloc(sizeof(dog_t));
+	if(name == NULL || age < 0 || owner === NULL)
+		return (NULL);
 
-	if (new_dog == NULL)
+	dog_ptr = malloc(sizeof(dog_t));
+	if (dog_ptr == NULL)
+		return (NULL);
+	dog_ptr->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (dog_ptr->name == NULL)
 	{
+		free (dog_ptr);
 		return (NULL);
 	}
-
-	new_dog->name = strdup(name);
-	new_dog->owner = strdup(owner);
-
-	if (new_dog->name == NULL || new_dog->owner == NULL)
+	dog_ptr->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (dog_ptr-> == NULL)
 	{
-		free(new_dog->name);
-		free(new_dog->owner);
-		free(new_dog);
-
+		free(dog_ptr->name);
+		free(dog_ptr->owner);
 		return (NULL);
 	}
+	dog_ptr->name = _strcpy(dog->name, name);
+	dog_ptr->age = age;
+	dog_ptr->owner = _strcpy(dog->owner, owner);
 
-	new_dog->age = age;
-
-	return (new_dog);
+	return (dog_ptr);
 }
+
