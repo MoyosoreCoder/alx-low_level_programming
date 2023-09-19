@@ -5,7 +5,7 @@
 
 /**
  * print_numbers - prints all numbers and separator
- * @separator - the separator
+ * @separator: the separator
  * @n: the numbers passed as arguments
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -28,4 +28,3 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	printf("\n");
 }
-				
