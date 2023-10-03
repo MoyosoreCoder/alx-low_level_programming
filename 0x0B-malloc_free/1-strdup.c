@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _strdup - duplicate a string and allocates memory
- * @str - string given in the main to duplicate
+ * @str: string given in the main to duplicate
  *
  * Return: duplicated string after using malloc function
  */
@@ -17,7 +17,6 @@ char *_strdup(char *str)
 	}
 	length = 0;
 
-	
 	while (str[length] != '\0')
 	{
 		length++;
