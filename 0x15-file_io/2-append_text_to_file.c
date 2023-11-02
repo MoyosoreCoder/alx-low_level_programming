@@ -23,7 +23,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	fd = open(filename, O_WRONLY | O_APPEND);
 	write_byte = write(fd, text_content, len);
 
-	if(fd == -1 || write_byte == -1)
+	if (fd == -1 || write_byte == -1)
 		return (-1);
 	close(fd);
 
